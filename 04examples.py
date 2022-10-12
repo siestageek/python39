@@ -70,5 +70,105 @@ print(7 - (3 + 8 * 6 + 3) - (2 + 5 * 2))
 
 
 # 9
+print(True and False and True or True)
+print(True or True and True and False)
+print((True and False) or (True and not False)
+      or (False and not False))
+
+print((2 < 3) or (5 > 2) and not (4 == 4) or 9 != 4)
+print(6 == 9 or 5 < 6 and 8 < 4 or 4 > 3)
+
 
 # 10
+print(27 / 13 + 4)
+print(27 / 13 + 4.0)
+print(42.7 % 3 + 18)
+
+# 논리식과 산술식(값)이 결합된 수식에서는
+# 논리식의 결과가 True면 값이 출력
+# 논리식의 결과가 False면 False가 출력
+print((3 < 4) and 5 / 8)
+
+print(23 / 5 + 23 / 5.0)
+
+# print(2.0 + 'a') # 문자와 정수/실수간 산술연산 불가
+# print(2 + 'a')
+
+print('a' + 'b')
+# print('a' / 'b') # 문자간 산술연산 불가
+
+print('a' and not 'b')
+print('a' and 'b')
+
+# print((float)'a' / 'b') # 문자는 실수로의 형변환 불가
+
+
+# 11
+name = '홍길동'
+weight = 55.5
+age = 35
+
+print(name, weight, age)
+
+
+# 12
+# K나이 - 세는나이(출생시 1살, 해가 바뀌면 + 1)
+#        만나이(출생시 0살, 생일이 지나면 + 1)
+#        연나이(현재연도 - 출생연도)
+birthYear = 1990
+currentYear = 2022
+isPassBirth = True
+
+age = currentYear - birthYear
+
+print('연나이', age)
+print('세는나이', 1 + age)
+
+# 파이썬의 if 단축식 : 참일때값 if 조건식 else 거짓일때값
+print('만나이', (age + 1) if isPassBirth else age)
+
+
+# 13
+print('7 x 1 =', (7*1))
+print('7 x 2 =', (7*2))
+print('7 x 3 =', (7*3))
+print('7 x 4 =', (7*4))
+print('7 x 5 =', (7*5))
+print('7 x 6 =', (7*6))
+print('7 x 7 =', (7*7))
+print('7 x 8 =', (7*8))
+print('7 x 9 =', (7*9))
+
+# % 서식
+print('7 x 1 = %d' % (7*1))
+print('7 x 2 = %d' % (7*2))
+print('7 x 3 = %d' % (7*3))
+print('7 x 4 = %d' % (7*4))
+print('7 x 5 = %d' % (7*5))
+print('7 x 6 = %d' % (7*6))
+print('7 x 7 = %d' % (7*7))
+print('7 x 8 = %d' % (7*8))
+print('7 x 9 = %d' % (7*9))
+
+# .foramt
+print('7 x 1 = {:d}'.format(7*1))
+print('7 x 2 = {:d}'.format(7*2))
+print('7 x 3 = {:d}'.format(7*3))
+print('7 x 4 = {:d}'.format(7*4))
+print('7 x 5 = {:d}'.format(7*5))
+print('7 x 6 = {:d}'.format(7*6))
+print('7 x 7 = {:d}'.format(7*7))
+print('7 x 8 = {:d}'.format(7*8))
+print('7 x 9 = {:d}'.format(7*9))
+
+# f-string
+print(f'7 x 1 = {7*1:2d}')
+print(f'7 x 2 = {7*2:2d}')
+print(f'7 x 3 = {7*3:2d}')
+print(f'7 x 4 = {7*4:2d}')
+print(f'7 x 5 = {7*5:2d}')
+print(f'7 x 6 = {7*6:2d}')
+print(f'7 x 7 = {7*7:2d}')
+print(f'7 x 8 = {7*8:2d}')
+print(f'7 x 9 = {7*9:2d}')
+
