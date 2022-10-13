@@ -1,6 +1,17 @@
 # 20
 
-# 22
+# 22 - if문의 함정
+number = 30
+
+if number % 2 == 0:
+    print('입력한 값은 짝수입니다')
+print('입력한 값은 홀수입니다')
+
+if number % 2 == 0:
+    print('입력한 값은 짝수입니다')
+else:
+    print('입력한 값은 홀수입니다')
+
 
 # 26 - 연봉/결혼 여부 세금 계산 (0:미혼)
 salary = int(input('연봉은?'))
@@ -28,5 +39,14 @@ else:
     print(year, '는 윤년이 아닙니다')
 
 
-# 25 - 복권 발행 프로그램
+# 25 - 복권 발행 프로그램 v1
+# 난수 생성시 random 모듈의 randrange(st, ed-1) 사용
+import random as rnd
 
+yourkey = int(input('복권번호는?'))
+lottokey = rnd.randrange(111, 1000)
+
+if yourkey == lottokey:
+    print('복권 당첨!! - 상금 백만원!!')
+else:
+    print('아쉽지만 다음 기회를!!')
